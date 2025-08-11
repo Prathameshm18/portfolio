@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psudo Elements</title>
+    <style>
+      h2::first-letter {
+        font-size: 2rem;
+        color: blue;
+      }
+      p::first-letter {
+        color: blue;
+        font-size: x-large;
+        font-style: italic;
+      }
+      p::first-line {
+        color: rgb(111, 165, 84);
+        font-variant: small-caps;
+      }
+      *::selection {
+        color: white;
+        background-color: aqua;
+      }
+      h2::before{
+        content: "Hello";
+        margin-right: 8px;
+      }
+      h2::after{
+        content: '';
+        display: inline-block;
+        background-image: url(../images/chixs.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+      .important::after{
+        content: 'important';
+        color: white;
+        background-color: black;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <!--    used to style specified parts -->
+    <h2>Psudo elemnts</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a
+      voluptatem officia impedit ratione id nihil harum, quod minus in adipisci?
+      Debitis inventore in dolores fugiat explicabo, aliquid nobis
+      <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quae
+      cum impedit exercitationem vel, corrupti quidem sequi nam asperiores illo
+      sunt officiis sit velit quos! Sint laboriosam assumenda aliquam autem?
+    </p>
+
+    <form>
+      <label class="imp">First name</label>
+      <input type="text" />
+    </form>
+    <ul>
+      <li>iten-1</li>
+      <li>iten-2</li>
+      <li class="important">iten-3</li>
+      <li>iten-4</li>
+      <li>iten-5</li>
+      <li>iten-6</li>
+      <li>iten-7</li>
+      <li>iten-8</li>
+      <li>iten-9</li>
+      <li>iten-10</li>
+    </ul>
+  </body>
+</html>

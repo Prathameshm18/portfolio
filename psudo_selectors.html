@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psuedo</title>
+    <style>
+        .container{
+            height: 700px;
+            width: 40%;
+            border: 2px solid;
+        }
+        .box1,.box2{
+            height: 200px;
+            width: 50%;
+            border: 2px solid;
+        }
+        /* targets the first child  of parent element */
+        /* .container p:first-child{
+            color: red;
+        }
+        .container p:last-child{
+            color: rgb(67, 249, 67);
+        } */
+
+        /* FIRST OF TYPE */
+        /* .container p:first-of-type{
+            color: red;
+        }
+        .container p:last-of-type{
+            color: rgb(90, 228, 90);
+        } */
+
+        /* NTH TERM CHILD */
+
+        /* .container p:nth-child(2){
+            color: red;
+        } */
+        /* .container :only-of-type{
+            color: red;} */
+
+        /* .container :empty{
+            height: 30px;
+            width: 200px;
+            color: aliceblue;
+            background-color: antiquewhite;
+        } */
+        .container .box1 :not(h3){
+            color: rgb(204, 15, 110);
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <h3>Box 1 heading</h3>
+        <p>this is some text inside box1</p>
+        <p>this is some text inside box1</p>
+        <p>this is some text inside box1</p>
+        <p>this is some text inside box1</p>
+      </div>
+      <p>1st paragraph inside container</p>
+      <p>2nd paragraph inside container</p>
+      <div class="box2">
+        <p>This is some text inside box2</p>
+        <p>This is some text inside box2</p>
+        <p>This is some text inside box2</p>
+        <!-- <p></p> -->
+      </div>
+    </div>
+  </body>
+</html>

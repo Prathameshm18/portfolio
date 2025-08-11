@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainDiv{
+            border: 1px black;
+            background-color: aqua;
+            height: 1300px;
+            top: 10px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            margin: 2px;
+            
+        }
+        /* #box3{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            border-color: rgb(21, 4, 205);
+            
+        } */
+         #box3{
+            position: sticky;
+            top: 2px;
+            border-color: black;
+         }
+        #box4{
+            position: absolute;
+            bottom: 110;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Position property</h2>
+    <div class="mainDiv">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    
+</body>
+</html>

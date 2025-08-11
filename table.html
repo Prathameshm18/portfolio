@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+        
+        }
+        /* table,th,td{
+            border: 2px solid black;
+            padding: 10px;
+        } */
+        th{
+            height: 50px;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        th,td{
+            border-bottom: 2px solid green ;
+            padding: 10px;
+            text-align: left;
+        }
+        td{
+            height: 50px;
+            text-align: center;
+            font-size: 22px;
+        }
+        tr:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Table with border</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Prathamesh</td>
+                <td>5353453</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>prxtham</td>
+                <td>5567</td>
+                <td>react</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>chikuu</td>
+                <td>98766</td>
+                <td>database</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
