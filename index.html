@@ -4,26 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" />
     <style>
-      div {
-        height: 200px;
-        width: 300px;
-        background-color: aqua;
-        text-align: center;
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .navbar {
+        display: flex;
+        justify-content: left;
+        background-color: #333;
+        /* padding: 0.8rem 1.8rem; */
+        height: 50px;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-right: 2rem; 
+        padding: 10px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+
+      }
+
+      .nav-links li {
+        margin-right: 1rem; 
+        font-size: 21px;
+        
+      }
+
+      .nav-links li:last-child {
+        margin-right: 0; 
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: solid;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #ccc;
       }
     </style>
   </head>
   <body>
-    <div
-      style="
-        color: brown;
-        font-style: italic;
-        font-size: 40px;
-        text-align: center;
-      "
-    >
-      This is Virat Kohli
-    </div>
+    <nav class="navbar">
+      <div class="logo">PM18</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
